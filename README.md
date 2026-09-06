@@ -45,6 +45,6 @@ O foco foi criar um produto que uma pequena empresa realmente conseguiria usar: 
 
 Também implementei uma API em Node.js e uma camada de perguntas sobre os dados, deixando a arquitetura preparada para uma integração real com IA.
 
-Projeto: [adicione aqui o link do GitHub]
+Projeto: https://github.com/josefernando21/insightflow
 
 #javascript #nodejs #express #ia #dados #portfólio #desenvolvimentoweb
