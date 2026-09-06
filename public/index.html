@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="InsightFlow: inteligência financeira para decisões melhores." />
+    <title>InsightFlow | Financial intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#top"><span class="brand-mark">i</span><span>insight<span class="brand-accent">flow</span></span></a>
+        <div class="workspace-switcher"><span class="workspace-dot"></span><span id="company-name">Seu workspace</span><span class="chevron">⌄</span></div>
+        <nav class="nav" aria-label="Navegação principal">
+          <p class="nav-label">Workspace</p>
+          <a class="nav-item active" href="#overview"><span class="nav-icon">◒</span> Visão geral</a>
+          <a class="nav-item" href="#recommendations"><span class="nav-icon">✦</span> Recomendações <span class="nav-count">3</span></a>
+          <a class="nav-item" href="#cashflow"><span class="nav-icon">⌁</span> Fluxo de caixa</a>
+          <a class="nav-item" href="#categories"><span class="nav-icon">◫</span> Categorias</a>
+          <p class="nav-label second">Sistema</p>
+          <a class="nav-item" href="#settings"><span class="nav-icon">⚙</span> Configurações</a>
+        </nav>
+          <div class="sidebar-bottom"><div class="status-line"><span class="status-dot"></span> Dados atualizados agora</div><div class="profile"><span class="avatar" id="user-initials">VC</span><div><strong id="sidebar-name">Visitante</strong><small>Admin</small></div><span class="more">•••</span></div></div>
+      </aside>
+
+      <main class="main" id="top">
+        <header class="topbar"><div class="breadcrumbs"><span>Workspace</span><span>/</span><strong>Visão geral</strong></div><div class="top-actions"><button class="edit-data" id="edit-data">Editar dados</button><button class="icon-button" aria-label="Notificações">♢<span class="notification-dot"></span></button><button class="help-button">?</button></div></header>
+        <section class="content" id="overview">
+          <div class="intro reveal"><div><p class="eyebrow">RESUMO EXECUTIVO <span></span> <span class="mono">05 SET 2026</span></p><h1>Bom dia, <span id="user-name">você</span>.</h1><p class="intro-copy">Aqui está o que está acontecendo com o seu negócio.</p></div><button class="period-button">Agosto 2026 <span>⌄</span></button></div>
+          <div class="metric-grid reveal">
+            <article class="metric-card featured"><div class="metric-head"><span>Receita total</span><span class="metric-badge up">↗ <b id="revenue-rate">11,2%</b></span></div><strong id="revenue-value">R$ 128.400</strong><small>vs. mês anterior</small><div class="sparkline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="metric-card"><div class="metric-head"><span>Despesas</span><span class="metric-badge down">↗ <b id="expense-rate">4,8%</b></span></div><strong id="expense-value">R$ 76.420</strong><small>vs. mês anterior</small><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="metric-card"><div class="metric-head"><span>Margem líquida</span><span class="metric-badge neutral">Estável</span></div><strong id="margin-rate">40,5%</strong><small id="margin-value">R$ 51.980 de resultado</small><div class="margin-ring"><span id="ring-value">40.5%</span></div></article>
+            <article class="metric-card forecast-card"><div class="metric-head"><span>Projeção próxima</span><span class="metric-badge forecast">IA</span></div><strong id="forecast-value">R$ 142.800</strong><small>Confiança da projeção: alta</small><div class="forecast-line">● <span></span> ✦</div></article>
+          </div>
+          <div class="section-grid reveal" id="cashflow"><article class="panel cash-panel"><div class="panel-heading"><div><p class="section-kicker">PERFORMANCE</p><h2>Receita vs. despesas</h2></div><div class="legend"><span><i class="legend-dot revenue"></i> Receita</span><span><i class="legend-dot expenses"></i> Despesas</span></div></div><div class="chart-wrap"><div class="y-labels"><span>150k</span><span>100k</span><span>50k</span><span>0</span></div><div class="chart"><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><svg viewBox="0 0 650 210" preserveAspectRatio="none" aria-label="Gráfico de receita e despesas"><path class="area" d="M0,122 C45,115 70,100 130,110 S205,75 260,87 S335,55 390,68 S460,42 520,48 S590,12 650,20 V210 H0Z"></path><path class="line revenue-line" d="M0,122 C45,115 70,100 130,110 S205,75 260,87 S335,55 390,68 S460,42 520,48 S590,12 650,20"></path><path class="line expense-line" d="M0,165 C55,159 75,143 130,149 S210,125 260,137 S330,113 390,121 S460,94 520,103 S585,76 650,83"></path></svg><div class="x-labels"><span>Mar</span><span>Abr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span></div></div></div></article><article class="panel category-panel" id="categories"><div class="panel-heading"><div><p class="section-kicker">COMPOSIÇÃO</p><h2>Onde o dinheiro vai</h2></div><button class="dots-button">•••</button></div><div class="donut"><div class="donut-center"><strong>R$ 76k</strong><span>despesas</span></div></div><div class="category-list"><div><span class="cat-name"><i style="background:#d96b3a"></i>Operação</span><strong>34%</strong></div><div><span class="cat-name"><i style="background:#1e6d69"></i>Pessoas</span><strong>28%</strong></div><div><span class="cat-name"><i style="background:#e5b94f"></i>Marketing</span><strong>18%</strong></div><div><span class="cat-name"><i style="background:#8b9a91"></i>Ferramentas</span><strong>12%</strong></div></div></article></div>
+          <section class="insights-section reveal" id="recommendations"><div class="insights-intro"><div><p class="section-kicker">INSIGHTFLOW AI</p><h2>Decisões mais inteligentes,<br /><em>antes</em> que virem urgência.</h2><p>A análise encontrou 3 pontos que merecem sua atenção.</p></div><div class="ai-orbit"><span>✦</span></div></div><div class="recommendations"><article class="recommendation high"><div class="rec-top"><span class="priority">ALTA PRIORIDADE</span><span class="impact">R$ 4.800/mês</span></div><h3>Renegociar contrato de mídia</h3><p>O custo subiu 23% em 60 dias e está 8 p.p. acima do benchmark do setor.</p><button class="rec-action">Ver análise <span>→</span></button></article><article class="recommendation"><div class="rec-top"><span class="priority">MÉDIA PRIORIDADE</span><span class="impact">+R$ 12.400 no caixa</span></div><h3>Acelerar recebíveis da conta Orion</h3><p>Antecipar o próximo ciclo melhora o caixa projetado sem comprometer a margem.</p><button class="rec-action">Ver análise <span>→</span></button></article><article class="recommendation"><div class="rec-top"><span class="priority">BAIXA PRIORIDADE</span><span class="impact">R$ 1.260/mês</span></div><h3>Consolidar ferramentas duplicadas</h3><p>Três assinaturas têm uso semelhante e podem ser unificadas no próximo ciclo.</p><button class="rec-action">Ver análise <span>→</span></button></article></div></section>
+          <section class="ask-section reveal"><div class="ask-icon">✦</div><div><p class="section-kicker">PERGUNTE AOS SEUS DADOS</p><h2>Qual decisão você precisa tomar?</h2></div><form id="ask-form"><input id="question" placeholder="Ex: Como posso melhorar meu caixa?" autocomplete="off" /><button aria-label="Enviar pergunta">→</button></form><p id="answer" class="answer" hidden></p></section>
+          <footer><span>InsightFlow</span><span>Construído para decisões que movem negócios.</span><span class="mono">v1.0.0</span></footer>
+        </section>
+      </main>
+    </div>
+    <div class="setup-backdrop" id="setup-backdrop"><form class="setup-modal" id="setup-form"><div class="setup-mark">✦</div><p class="section-kicker">SEU WORKSPACE</p><h2>Vamos personalizar<br /><em>seu painel.</em></h2><p class="setup-copy">Digite seus dados para transformar o dashboard em uma análise do seu negócio.</p><label>Seu nome<input id="setup-name" required placeholder="Ex: Mariana Silva" /></label><label>Nome da empresa<input id="setup-company" required placeholder="Ex: Aurora Studio" /></label><div class="setup-row"><label>Receita mensal<input id="setup-revenue" required type="number" min="1" placeholder="128400" /></label><label>Despesas mensais<input id="setup-expenses" required type="number" min="0" placeholder="76420" /></label></div><button class="setup-submit" type="submit">Criar meu painel <span>→</span></button><small class="setup-note">Você poderá editar esses dados depois.</small></form></div>
+    <script src="app.js"></script>
+  </body>
+</html>
