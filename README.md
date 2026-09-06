@@ -39,12 +39,25 @@ Node.js, Express, JavaScript, HTML, CSS e SVG.
 
 ## Post para LinkedIn
 
-Construí o InsightFlow, um dashboard de inteligência financeira para transformar números em decisões melhores.
+Desenvolvi um protótipo do **InsightFlow**, uma plataforma de inteligência financeira para pequenas empresas.
 
-O foco foi criar um produto que uma pequena empresa realmente conseguiria usar: visão executiva, evolução de receita e despesas, composição de custos, projeção e recomendações priorizadas.
+A proposta é transformar dados financeiros em informações mais simples para apoiar decisões de negócio.
 
-Também implementei uma API em Node.js e uma camada de perguntas sobre os dados, deixando a arquitetura preparada para uma integração real com IA.
+Neste protótipo, implementei:
 
-Projeto: https://github.com/josefernando21/insightflow
+- Dashboard financeiro responsivo.
+- Cadastro de nome, empresa, receita e despesas.
+- Cálculo automático de margem e projeção.
+- Recomendações financeiras.
+- API em Node.js e Express.
+- Assistente para perguntas sobre os dados.
+
+O projeto foi desenvolvido com **HTML, CSS, JavaScript, Node.js e Express**.
+
+Esta é a primeira versão do produto. Como próximos passos, pretendo adicionar banco de dados, autenticação, importação de planilhas e integração com um modelo de IA real.
+
+Projeto disponível no GitHub:
+
+https://github.com/josefernando21/insightflow
 
 #javascript #nodejs #express #ia #dados #portfólio #desenvolvimentoweb
