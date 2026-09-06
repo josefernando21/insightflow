@@ -38,27 +38,24 @@ Depois, acesse `http://localhost:3030`.
 
 Node.js, Express, JavaScript, HTML, CSS e SVG.
 
-## Post para LinkedIn
+## Como funciona
 
-Desenvolvi o **InsightFlow**, um protótipo de plataforma de inteligência financeira para pequenas empresas.
+1. A pessoa informa seu nome, empresa, receita e despesas mensais.
+2. A API valida os dados e calcula o resultado, a margem e a projeção do próximo período.
+3. O dashboard apresenta os indicadores de forma visual e organizada.
+4. O assistente responde perguntas com base nos valores informados.
 
-A proposta é transformar dados financeiros em informações mais simples para apoiar decisões de negócio.
+## Estrutura do projeto
 
-Neste protótipo, implementei:
+- `src/server.js`: servidor Express e rotas da API.
+- `public/index.html`: estrutura da interface.
+- `public/styles.css`: layout, responsividade e identidade visual.
+- `public/app.js`: interações, envio do formulário e atualização dos indicadores.
 
-- Dashboard financeiro responsivo.
-- Cadastro de nome, empresa, receita e despesas.
-- Cálculo automático de margem e projeção.
-- Recomendações financeiras.
-- API em Node.js e Express.
-- Assistente para perguntas sobre os dados.
+## Exemplo de uso
 
-O projeto foi desenvolvido com **HTML, CSS, JavaScript, Node.js e Express**.
+Para uma receita mensal de R$ 100.000 e despesas de R$ 35.000, o sistema calcula:
 
-Esta é a primeira versão do produto. Como próximos passos, pretendo adicionar banco de dados, autenticação, histórico financeiro, importação de planilhas e novos recursos de análise.
-
-Projeto disponível no GitHub:
-
-https://github.com/josefernando21/insightflow
-
-#javascript #nodejs #express #ia #dados #portfólio #desenvolvimentoweb
+- Resultado: R$ 65.000.
+- Margem líquida: 65%.
+- Projeção do próximo período: R$ 111.200.
