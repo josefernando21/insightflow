@@ -1,14 +1,15 @@
 # InsightFlow
 
-Dashboard de inteligência financeira para pequenas empresas. O projeto demonstra como transformar dados operacionais em decisões práticas, com uma interface executiva, indicadores de performance, projeções e um assistente de perguntas em linguagem natural.
+Dashboard de inteligência financeira para pequenas empresas. Criei este projeto para organizar informações financeiras e facilitar a tomada de decisões, com indicadores, projeções e um assistente de perguntas em linguagem natural.
 
-## O que este projeto demonstra
+## Funcionalidades
 
-- Produto web responsivo com foco em experiência e leitura rápida.
-- API REST em Node.js e Express.
-- Camada de análise que responde perguntas sobre receita, despesas, margem e caixa.
-- Visualização de dados com SVG e CSS, sem dependências pesadas de UI.
-- Arquitetura pronta para trocar o mecanismo local por um provedor de IA real.
+- Dashboard financeiro responsivo.
+- Cadastro de nome, empresa, receita e despesas.
+- Cálculo de margem, resultado e projeção.
+- Recomendações financeiras organizadas por prioridade.
+- Perguntas sobre receita, despesas, margem e caixa.
+- API REST desenvolvida com Node.js e Express.
 
 ## Executar localmente
 
@@ -26,12 +27,12 @@ Depois, acesse `http://localhost:3030`.
 - `GET /api/overview` retorna os dados do dashboard.
 - `POST /api/ask` recebe `{ "question": "Como posso melhorar meu caixa?" }`.
 
-## Próximos passos
+## Melhorias planejadas
 
 1. Persistir transações em PostgreSQL ou MySQL.
-2. Adicionar autenticação e múltiplos workspaces.
-3. Conectar a um modelo de IA com contexto filtrado por empresa.
-4. Adicionar importação de CSV e exportação de relatórios.
+2. Adicionar autenticação para diferentes usuários.
+3. Adicionar histórico financeiro por empresa.
+4. Permitir importação de planilhas e exportação de relatórios.
 
 ## Stack
 
@@ -39,7 +40,7 @@ Node.js, Express, JavaScript, HTML, CSS e SVG.
 
 ## Post para LinkedIn
 
-Desenvolvi um protótipo do **InsightFlow**, uma plataforma de inteligência financeira para pequenas empresas.
+Desenvolvi o **InsightFlow**, um protótipo de plataforma de inteligência financeira para pequenas empresas.
 
 A proposta é transformar dados financeiros em informações mais simples para apoiar decisões de negócio.
 
@@ -54,7 +55,7 @@ Neste protótipo, implementei:
 
 O projeto foi desenvolvido com **HTML, CSS, JavaScript, Node.js e Express**.
 
-Esta é a primeira versão do produto. Como próximos passos, pretendo adicionar banco de dados, autenticação, importação de planilhas e integração com um modelo de IA real.
+Esta é a primeira versão do produto. Como próximos passos, pretendo adicionar banco de dados, autenticação, histórico financeiro, importação de planilhas e novos recursos de análise.
 
 Projeto disponível no GitHub:
 
